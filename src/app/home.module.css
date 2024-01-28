@@ -1,0 +1,14 @@
+.imgContainer{
+    position: relative;
+    width: 50%;
+    height: 300px;
+}
+.desc{
+    display: block;
+    text-align: center;
+    font-style: italic;
+    font-size: medium;
+    height: 200px;
+    width: 500px;
+    margin: 0px 100% 0px 40%;
+}
