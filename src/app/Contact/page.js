@@ -1,14 +1,25 @@
 import React from 'react';
-
+import styles from "./contact.module.css";
 
 const Contact = () => {
   return (
-    <div>
-      <h1>Contactez-nous</h1>
-      <p>
-        Vous pouvez nous contacter par email à contact@lacite.com ou remplir le formulaire ci-dessous :
-      </p>
-      {/* formulaire de contact ou d'autres informations de contact */}
+    <div className={styles.container}>
+      <h2>Contactez-nous</h2>
+      <form className={styles.form}>
+        <div className={styles.formGroup}>
+          <label >Nom:</label>
+          <input type='text' id="nom" placeholder='Entrer votre nom'/>
+        </div>
+        <div className={styles.formGroup}>
+          <label >Email:</label>
+          <input type='email' id="email" placeholder='Entrez votre adresse e-mail'/>
+        </div>
+        <div className={styles.formGroup}>
+          <label >Message:</label>
+          <textarea id="message" rows="4" placeholder='Votre message'></textarea>
+        </div>
+        <button type="submit">Envoyer</button>
+      </form>
     </div>
   );
 }
